@@ -6,7 +6,7 @@ Before(({ I }) => {
 
 const assert = require('assert');
 
-Scenario('showing empty liked movies', async ({ I }) => {
+Scenario('showing empty liked restos', async ({ I }) => {
   I.seeElement('.cards');
   I.amOnPage('/');
 

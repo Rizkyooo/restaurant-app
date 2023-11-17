@@ -7,9 +7,9 @@ const createRestaurantItemTemplate = (restaurant) => `
     <div class="card_image">
     <p class="card_location">${restaurant.city}</p>
     <picture>
-    <source media="(max-width: 600px)" srcset="${Config.BASE_IMAGE_URL_SMALL}/${restaurant.pictureId}">
-    <source media="(max-width: 600px)" srcset="${Config.BASE_IMAGE_URL_SMALL}/${restaurant.pictureId}">
-    <img class="lazyload" src=${Config.BASE_IMAGE_URL}/${restaurant.pictureId} alt="${restaurant.name}">
+    <source media="(max-width: 600px)" data-srcset="${Config.BASE_IMAGE_URL_SMALL}/${restaurant.pictureId}">
+    <source media="(max-width: 600px)" data-srcset="${Config.BASE_IMAGE_URL_SMALL}/${restaurant.pictureId}">
+    <img class="lazyload" data-src=${Config.BASE_IMAGE_URL}/${restaurant.pictureId} alt="${restaurant.name}">
     </picture>
     </div>
             <div class="card_content">
@@ -26,9 +26,9 @@ const creatRestaurantDetailTemplate = (restaurant) => `
     <div class="card_detail_image">
         <p class="card_detail_location">${restaurant.city}</p>
     <picture>
-    <source media="(max-width: 600px)" srcset="${Config.BASE_IMAGE_URL_SMALL}/${restaurant.pictureId}">
-    <source media="(max-width: 600px)" srcset="${Config.BASE_IMAGE_URL_SMALL}/${restaurant.pictureId}" >
-    <img class="lazyload" src=${Config.BASE_IMAGE_URL}/${restaurant.pictureId} alt="${restaurant.name}">
+    <source media="(max-width: 600px)" data-srcset="${Config.BASE_IMAGE_URL_SMALL}/${restaurant.pictureId}">
+    <source media="(max-width: 600px)" data-srcset="${Config.BASE_IMAGE_URL_SMALL}/${restaurant.pictureId}" >
+    <img class="lazyload" data-src=${Config.BASE_IMAGE_URL}/${restaurant.pictureId} alt="${restaurant.name}">
     </picture>
     </div>
     <div class="card_detail_content">
